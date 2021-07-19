@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Igniter</string>
+    <string name="app_name">Ostrich</string>
 
     <string name="common_delete">Delete</string>
     <string name="common_alert">Alert</string>
@@ -60,6 +60,7 @@
     <string name="scan_qr_code">Scan QR</string>
     <string name="scan_qr_code_camera_error">Camera Error</string>
 
+
     <string name="menu_action_exempt_app_save">Save</string>
     <string name="menu_action_exempt_app">Exempt Apps</string>
     <string name="exempt_app_search_title">Search Apps</string>
@@ -92,6 +93,9 @@
     <string name="credit_item3_title">bingoogolapple/BGAQRCode-Android</string>
 
     <string name="action_about">About</string>
+    <string name="action_get_id">Generate ID</string>
+    <string name="action_set_ip">Set IP</string>
+    <string name="action_check_update">Check Update</string>
 
     <!-- others -->
     <string name="trojan_service_not_available">Trojan service is not available.</string>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Igniter</string>
+    <string name="app_name">Ostrich</string>
 
     <string name="common_delete">删除</string>
     <string name="common_alert">提示</string>
@@ -88,6 +88,9 @@
     <string name="credit_item3_title">bingoogolapple/BGAQRCode-Android</string>
 
     <string name="action_about">关于</string>
+    <string name="action_get_id">生成ID</string>
+    <string name="action_set_ip">设置 IP</string>
+    <string name="action_check_update">检查更新</string>
 
     <!-- others -->
     <string name="trojan_service_not_available">Trojan 服务不可用</string>

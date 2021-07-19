@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/display_ip"
+        android:layout_above="@id/adminId"
+        android:layout_alignLeft="@id/adminId"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#008B8B"
+            android:textSize="9pt"
+            android:text="当前服务器地址:">
+        </TextView>
+        <TextView
+            android:id="@+id/nowIP"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:text="">
+        </TextView>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/adminId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#008B8B"
+                android:textSize="9pt"
+                android:text="设置服务器地址:" />
+
+            <EditText
+                android:id="@+id/input_ip"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/textView"
+                android:hint="eg:https://xx.xx" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_setIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF96E1DA"
+            android:layout_below="@id/adminId"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="确定" />
+
+
+</RelativeLayout>

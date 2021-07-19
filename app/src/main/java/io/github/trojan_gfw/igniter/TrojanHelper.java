@@ -1,5 +1,7 @@
 package io.github.trojan_gfw.igniter;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -10,11 +12,13 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -140,6 +144,7 @@ public class TrojanHelper {
 
     public static void WriteTrojanConfig(TrojanConfig trojanConfig, String trojanConfigPath) {
         String config = trojanConfig.generateTrojanConfigJSON();
+        Log.e("打印配置",config);
         File file = new File(trojanConfigPath);
         try {
             try (FileOutputStream fos = new FileOutputStream(file)) {

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.trojan_gfw.igniter.IdManagerActivity">
+    <RelativeLayout
+        android:id="@+id/drawer_display_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+
+    <RelativeLayout
+        android:id="@+id/adminId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#008B8B"
+            android:text="管理员ID:" />
+
+        <EditText
+            android:id="@+id/input_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textView"
+            android:ems="10"
+            android:hint="请输入你ID"
+            android:inputType="textPersonName"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/userId"
+        android:layout_below="@+id/adminId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#008B8B"
+            android:text="用户的ID:" />
+
+        <EditText
+            android:id="@+id/input_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="10"
+            android:hint="请输入你为用户申请的ID"
+            android:inputType="textPersonName"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tishi"
+            android:layout_below="@+id/userId"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textColor="#EA5D5D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:id="@+id/create"
+            android:layout_below="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+            <Button
+                android:id="@+id/btn_getID"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF96E1DA"
+                android:background="@drawable/edit_background"
+                android:text="获取ID" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/create"
+            android:id="@+id/watchID"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/display_user_id"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="此处显示生成的id"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/copy_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:src="@drawable/copy">
+            </ImageButton>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
